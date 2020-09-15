@@ -1,0 +1,216 @@
+/* Модалка */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  // z-index: 2;
+  padding: 94px 15px;
+  // visibility: visible;
+  overflow-y: scroll;
+  transition: $animation;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  // top: 93px;
+  // left: 15px;
+  // transform: translate(-50%, -50%);
+  max-width: 450px;
+  width: 100%;
+  // min-height: 609px;
+  padding: 40px 40px;
+  background-color: $main-3-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+  }
+  &-title {
+    display: block;
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.form-field,
+.form-field-comment {
+  position: relative;
+  display: block;
+  margin-bottom: 28px;
+}
+.form-field-comment {
+  margin-bottom: 20px;
+}
+
+.form-input,
+.form-input-comment {
+  padding: 12px 16px 12px 42px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-input-comment {
+  padding-left: 16px;
+  resize: none;
+}
+
+.form-label,
+.form-label-comment {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: $animation;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+.form-label-comment {
+  left: 16px;
+  top: 0;
+  transform: translateY(50%);
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-field:focus-within > .form-input,
+.form-field-comment:focus-within > .form-input-comment {
+  outline: none;
+  border-color: $main-2-color;
+}
+
+.form-field:focus-within > .modal-icon {
+  fill: $main-2-color;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: $main-2-color;
+  transform: translateY(-45px);
+  left: 16px;
+}
+
+.form-input-comment:focus + .form-label-comment,
+.form-input-comment:not(:placeholder-shown) + .form-label-comment {
+  color: $main-2-color;
+  transform: translateY(-25px);
+  left: 16px;
+}
+
+.checkbox-label {
+  @include flex;
+}
+
+.checkbox {
+  /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-color: $main-3-color;
+  border: 2px solid $main-1-color;
+  border-radius: 4px;
+  margin-right: 7px;
+
+  transition: $animation;
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: $main-2-color;
+  background-color: $main-2-color;
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox:focus + .checkbox-icon {
+  border-color: $main-2-color;
+}
+.policy,
+.rules {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.rules {
+  color: $main-2-color;
+}
+
+.send {
+  min-width: 200px;
+  padding: 10px 55px;
+  background-color: $main-2-color;
+  color: $main-3-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+.close {
+  @include centeredflex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+
+  &:focus,
+  &:hover {
+    fill: $main-2-color;
+  }
+}

@@ -1,0 +1,13 @@
+%link {
+  transition: $animation;
+  text-decoration: none;
+}
+.link {
+  transition: $animation;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: $main-2-color;
+}

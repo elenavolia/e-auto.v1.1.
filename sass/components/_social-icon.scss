@@ -1,0 +1,61 @@
+.team {
+  .social {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-bottom: 24px;
+  }
+}
+
+.social {
+  @include centeredflex;
+  &-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    transition: $animation;
+  }
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social {
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: $main-9-color;
+  }
+  &-item a:hover,
+  &-item a:focus {
+    .social-icon {
+      fill: $main-3-color;
+      transition: $animation;
+    }
+  }
+}
+
+.social {
+  &-item a:hover,
+  &-item a:focus {
+    background-color: $main-2-color;
+    transition: $animation;
+  }
+}
+.footer {
+  .social-icon {
+    fill: $main-3-color;
+  }
+  .social-item a {
+    background-color: $main-8-color;
+  }
+}
+
+.footer {
+  .social-item a:hover,
+  .social-item a:focus {
+    background-color: $main-2-color;
+    transition: $animation;
+  }
+}

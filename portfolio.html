@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href=".//css/normalize.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="container">
+        <div class="header-content border">
+          <div class="header-logo">
+            <a class="logo" href="index.html"
+              ><span class="web">Web</span> Studio</a
+            >
+          </div>
+
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-close" href="./images/icons.svg#cross"></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="menu-link">Студия</a>
+              </li>
+              <li class="nav-item">
+                <a href="portfolio.html" class="menu-link active-page"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#contacts" class="menu-link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="mail icon-header">
+                    <use href="./images/icons.svg#mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-item">
+                <a href="tel:+380961111111" class="link">
+                  <svg class="phone icon-header">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Our Project -->
+    <main>
+      <section class="our-project">
+        <div class="container">
+          <!-- То что нужно скрыть -->
+          <h1 class="visually-hidden">Наши проекты</h1>
+          <!-- То что нужно скрыть -->
+
+          <!-- Filters -->
+          <ul class="filter">
+            <li class="filter-item">
+              <button type="button" class="button">Все</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portfolio">
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-370.webp    370w,
+                        ./images/portfolio/project1-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-370.jpg    370w,
+                        ./images/portfolio/project1-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-354.webp    354w,
+                        ./images/portfolio/project1-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-354.jpg    354w,
+                        ./images/portfolio/project1-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-450.webp    450w,
+                        ./images/portfolio/project1-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-450.jpg    450w,
+                        ./images/portfolio/project1-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project1-450.jpg"
+                      alt="project1"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project1.jpg" alt="project1"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Технокряк</h2>
+                  <p class="card-text">Веб сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-370.webp    370w,
+                        ./images/portfolio/project2-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-370.jpg    370w,
+                        ./images/portfolio/project2-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-354.webp    354w,
+                        ./images/portfolio/project2-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-354.jpg    354w,
+                        ./images/portfolio/project2-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-450.webp    450w,
+                        ./images/portfolio/project2-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-450.jpg    450w,
+                        ./images/portfolio/project2-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project2-450.jpg"
+                      alt="project2"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project2.jpg" alt="project2"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Постер New Orlean vs Golden Star</h2>
+                  <p class="card-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project3-370.webp    370w,
+                        ./images/portfolio/project3-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project3-370.jpg    370w,
+                        ./images/portfolio/project3-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project3-354.webp    354w,
+                        ./images/portfolio/project3-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project3-354.jpg    354w,
+                        ./images/portfolio/project3-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project3-450.webp    450w,
+                        ./images/portfolio/project3-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project3-450.jpg    450w,
+                        ./images/portfolio/project3-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project3-450.jpg"
+                      alt="project3"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project3.jpg" alt="project3"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Ресторан Seafood</h2>
+                  <p class="card-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project4-370.webp    370w,
+                        ./images/portfolio/project4-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project4-370.jpg    370w,
+                        ./images/portfolio/project4-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project4-354.webp    354w,
+                        ./images/portfolio/project4-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project4-354.jpg    354w,
+                        ./images/portfolio/project4-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project4-450.webp    450w,
+                        ./images/portfolio/project4-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project4-450.jpg    450w,
+                        ./images/portfolio/project4-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project4-450.jpg"
+                      alt="project4"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project4.jpg" alt="project4"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Проект Prime</h2>
+                  <p class="card-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project5-370.webp    370w,
+                        ./images/portfolio/project5-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project5-370.jpg    370w,
+                        ./images/portfolio/project5-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project5-354.webp    354w,
+                        ./images/portfolio/project5-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project5-354.jpg    354w,
+                        ./images/portfolio/project5-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project5-450.webp    450w,
+                        ./images/portfolio/project5-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project5-450.jpg    450w,
+                        ./images/portfolio/project5-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project5-450.jpg"
+                      alt="project5"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project5.jpg" alt="project5"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Ресторан Seafood</h2>
+                  <p class="card-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project6-370.webp    370w,
+                        ./images/portfolio/project6-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project6-370.jpg    370w,
+                        ./images/portfolio/project6-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project6-354.webp    354w,
+                        ./images/portfolio/project6-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project6-354.jpg    354w,
+                        ./images/portfolio/project6-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project6-450.webp    450w,
+                        ./images/portfolio/project6-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project6-450.jpg    450w,
+                        ./images/portfolio/project6-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project6-450.jpg"
+                      alt="project6"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project6.jpg" alt="project6"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Inspiration has no Borders</h2>
+                  <p class="card-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project7-370.webp    370w,
+                        ./images/portfolio/project7-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project7-370.jpg    370w,
+                        ./images/portfolio/project7-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project7-354.webp    354w,
+                        ./images/portfolio/project7-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project7-354.jpg    354w,
+                        ./images/portfolio/project7-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project7-450.webp    450w,
+                        ./images/portfolio/project7-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project7-450.jpg    450w,
+                        ./images/portfolio/project7-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project7-450.jpg"
+                      alt="project7"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project7.jpg" alt="project7"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Издание Limited Edition</h2>
+                  <p class="card-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project8-370.webp    370w,
+                        ./images/portfolio/project8-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project8-370.jpg    370w,
+                        ./images/portfolio/project8-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project8-354.webp    354w,
+                        ./images/portfolio/project8-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project8-354.jpg    354w,
+                        ./images/portfolio/project8-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project8-450.webp    450w,
+                        ./images/portfolio/project8-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project8-450.jpg    450w,
+                        ./images/portfolio/project8-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project8-450.jpg"
+                      alt="project8"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project8.jpg" alt="project8"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Проект LAB</h2>
+                  <p class="card-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project9-370.webp    370w,
+                        ./images/portfolio/project9-370@2x.webp 740w
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project9-370.jpg    370w,
+                        ./images/portfolio/project9-370@2x.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project9-354.webp    354w,
+                        ./images/portfolio/project9-354@2x.webp 708w
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project9-354.jpg    354w,
+                        ./images/portfolio/project9-354@2x.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project9-450.webp    450w,
+                        ./images/portfolio/project9-450@2x.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      sizes="450px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/project9-450.jpg    450w,
+                        ./images/portfolio/project9-450@2x.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="450px"
+                    />
+
+                    <img
+                      src="./images/portfolio/project9-450.jpg"
+                      alt="project9"
+                    />
+                  </picture>
+                  <!-- <img src="./images/project9.jpg" alt="project9"> -->
+                  <p class="card-item-description">
+                    Технокряк это современная площадка распостранения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+                <div class="card-contents">
+                  <h2 class="card-titles">Growing Business</h2>
+                  <p class="card-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <section>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-contacts">
+              <a class="logo" href="#top"
+                ><span class="web">Web</span> Studio</a
+              >
+              <address id="contacts" class="address">
+                <p class="address-item inverse">
+                  г. Киев, бул. Леси Украинки, 26
+                </p>
+                <p class="address-item">
+                  <a href="mailto:info@devstudio.com" class="link">
+                    info@devstudio.com</a
+                  >
+                </p>
+                <p class="address-item">
+                  <a href="tel:+380961111111" class="link">
+                    +38 096 111 11 11
+                  </a>
+                </p>
+              </address>
+            </div>
+            <div class="join-social-network">
+              <b class="join-title">ПРИСОЕДИНЯЙТЕСЬ</b>
+              <ul class="social">
+                <li class="social-item">
+                  <a href="">
+                    <svg class="social-icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="">
+                    <svg class="social-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="">
+                    <svg class="social-icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="">
+                    <svg class="social-icon">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <form class="subscribe">
+              <label>
+                <b class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+                <input
+                  type="email"
+                  class="footer-input"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="button button-footer">
+                <span class="subscribe-button">Подписаться</span
+                ><svg class="subscribe-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
