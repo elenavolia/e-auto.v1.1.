@@ -1,81 +1,83 @@
 .features {
-  .container {
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 0;
+    .container {
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 0;
+        }
+        
     }
-  }
 }
 .features {
-  &-list {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
+    &-list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      justify-content: space-between;
+    &-item {
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px * 2 ) / 2);
+            // width: 354px;
+            // width: calc((100% - 2 * 30px) / 2);
+            // margin-right: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
     }
-  }
-  &-item {
-    @media screen and (min-width: 768px) {
-      width: calc((100% - 30px * 2) / 2);
-      // width: 354px;
-      // width: calc((100% - 2 * 30px) / 2);
-      // margin-right: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
-  }
 }
 .features {
-  &-item:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
+    &-item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 768px) {
+            margin-right: 30px;         
+        }
     }
-    @media screen and (min-width: 768px) {
-      margin-right: 30px;
+    &-item:nth-child(2n) {
+        @media screen and (max-width: 1199px) {
+            margin-right: 0px;         
+        }
     }
-  }
-  &-item:nth-child(2n) {
-    @media screen and (max-width: 1199px) {
-      margin-right: 0px;
+    &-item:nth-child(n + 3) {
+        @media screen and (max-width: 1199px) {
+            margin-top: 30px;        
+        }
+        
     }
-  }
-  &-item:nth-child(n + 3) {
-    @media screen and (max-width: 1199px) {
-      margin-top: 30px;
-    }
-  }
 }
 
 .features {
-  &-image {
-    @include centeredflex;
-    height: 120px;
-    background-color: $main-6-color;
-    border-radius: 4px;
-  }
+    &-image {
+        @include centeredflex;
+        height: 120px;
+        background-color: $main-6-color;
+        border-radius: 4px;
+    }
 }
 .icon {
-  width: 70px;
-  height: 70px;
+    width: 70px;
+    height: 70px;
 }
 .features-item {
-  &-title {
-    @media screen and (max-width: 767px) {
-      text-align: center;
+    &-title {
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  &-text {
-    color: $main-4-color;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-  }
+    &-text {
+        color: $main-4-color;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
 }
